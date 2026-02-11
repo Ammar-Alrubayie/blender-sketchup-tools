@@ -1,4 +1,7 @@
 # Blender SketchUp Tools (Grid Mode) – Enhanced
+## Preview
+
+![Blender SketchUp Tools Preview](preview.png)
 
 SketchUp-like modeling tools for Blender 4.5 LTS  
 Designed for fast architectural and technical modeling.
