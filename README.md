@@ -1,202 +1,231 @@
 # Blender SketchUp Tools (Grid Mode) – Enhanced
-## Preview
 
-![Blender SketchUp Tools Preview](preview.png)
+![Blender Version](https://img.shields.io/badge/Blender-4.5_LTS-orange)
+![License](https://img.shields.io/badge/License-MIT-blue)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
 
-SketchUp-like modeling tools for Blender 4.5 LTS  
-Designed for fast architectural and technical modeling.
+SketchUp-style modeling tools for **Blender 4.5 LTS**  
+Designed for fast architectural and technical modeling workflows.
 
 ---
 
-# 🚀 Installation
+## Preview
+
+<p align="center">
+  <img src="preview.png" width="900">
+</p>
+
+---
+
+## Overview
+
+Blender SketchUp Tools (Grid Mode) brings intuitive SketchUp-like drawing behavior into Blender.
+
+This add-on is focused on:
+
+- Clean grid-based drawing
+- Fast architectural modeling
+- Precise numeric input
+- Axis locking
+- Vertex snapping
+- Non-destructive workflow logic
+
+Built specifically for users who want the simplicity of SketchUp inside Blender.
+
+---
+
+# Installation
 
 ## Method 1 – Direct Install (Recommended)
 
-1. Open **Blender 4.5**
+1. Open **Blender 4.5 LTS**
 2. Go to:
 
+   ```
    Edit → Preferences → Add-ons
+   ```
 
 3. Click **Install**
 4. Select:
 
+   ```
    sketchup-tools.py
+   ```
 
 5. Enable the add-on
 
 You will now find the tools in:
 
+```
 3D View → Sidebar (Press N) → SketchUp
+```
 
 ---
 
-## Method 2 – Manual Folder Installation
+## Method 2 – Manual Folder Install
 
 1. Create a folder:
 
+   ```
    sketchup_tools_grid
+   ```
 
-2. Rename the file to:
+2. Place `sketchup-tools.py` inside it
+3. Copy the folder to:
 
-   __init__.py
-
-3. Place it inside:
-
-   Windows:
-   C:\Users\YourName\AppData\Roaming\Blender Foundation\Blender\4.5\scripts\addons\
+   **Windows**
+   ```
+   C:\Users\YOUR_USERNAME\AppData\Roaming\Blender Foundation\Blender\4.5\scripts\addons\
+   ```
 
 4. Restart Blender
-5. Enable the add-on in Preferences
+5. Enable the add-on from Preferences
 
 ---
 
-# 📌 How to Use
+# Tools Included
 
-Open 3D View → Press **N** → Go to **SketchUp tab**
+## Draw Tools
 
-Available tools:
+### Line Tool (L)
+- SketchUp-style line drawing
+- Axis locking (X / Y / Z)
+- Numeric length input
+- Vertex snapping
 
-• Line  
-• Rectangle  
-• Arc  
-• Plane Selection (XY / XZ / YZ)
+### Rectangle Tool (R)
+- Click-drag rectangle creation
+- Type width and height while drawing
+- Axis constrained
 
----
-
-# ✏️ Line Tool
-
-## Usage
-
-1. Click Line
-2. Click start point
-3. Move mouse
-4. Click to confirm
-
-## Features
-
-• Type exact length while drawing:
-  
-  2.35m
-
-• Axis lock:
-
-  Press X, Y, or Z
-
-• Shift = auto axis lock (SketchUp style)
-
-• Smart vertex snapping
+### Arc Tool (A)
+- 3-point arc creation
+- Adjustable segment resolution
+- Snap enabled
 
 ---
 
-# ▭ Rectangle Tool
+## Model Tools (Edit Mode)
 
-## Usage
-
-1. Click Rectangle
-2. Click first corner
-3. Drag
-4. Click to confirm
-
-## Enter Dimensions
-
-While dragging, type:
-
-  2.5m , 1.2m
-
-Press Enter.
-
-## Features
-
-• Automatic square with Shift  
-• Axis locking  
-• Works on XY / XZ / YZ planes  
-• Smart origin placement  
+### Push/Pull (P)
+- Select face
+- Drag to extrude
+- Supports numeric input
+- Clean extrusion logic
 
 ---
 
-# ◯ Arc Tool (2-Point)
+# Shortcuts
 
-## Usage
-
-1. Select start point
-2. Select end point
-3. Move mouse to define curvature
-4. Click to confirm
-
-## Features
-
-• Adjustable bulge  
-• Custom segment count  
-• Smart snapping  
+| Key | Action |
+|-----|--------|
+| L | Line Tool |
+| R | Rectangle Tool |
+| A | Arc Tool |
+| P | Push/Pull (Edit Mode) |
+| X / Y / Z | Axis Lock |
+| Enter | Confirm |
+| Backspace | Clear Input |
+| ESC / Right Click | Cancel |
 
 ---
 
-# 🧭 Plane Selection
+# Features
 
-Press:
-
-1 → XY Plane  
-2 → XZ Plane  
-3 → YZ Plane  
-
-All drawing tools respect selected plane.
-
----
-
-# 🎯 Snapping System
-
-• Vertex snapping via KDTree  
-• Visual snap marker  
-• Fast and optimized  
+- Grid Mode drawing (XY / XZ / YZ)
+- Vertex snapping system
+- Axis guides visualization
+- KDTree snap logic
+- GPU draw handlers
+- Non-destructive temporary geometry
+- Smart origin logic
+- Optimized for architectural workflows
 
 ---
 
-# ⌨️ Shortcuts
+# Add-on Settings
 
-X / Y / Z → Axis Lock  
-Shift → Auto axis constraint  
-Enter → Confirm typed value  
-Esc → Cancel  
-1 / 2 / 3 → Change plane  
+Go to:
 
----
-
-# ⚙️ Add-on Settings
-
+```
 Edit → Preferences → Add-ons → SketchUp Tools
+```
 
 Options include:
 
-• Snap strength  
-• Arc segments  
-• Grid size  
-• Axis guide visibility  
-• Hotkey enable/disable  
+- Snap strength
+- Arc segments
+- Grid size
+- Axis guide visibility
+- Hotkey enable/disable
 
 ---
 
-# 🏗 Technical Overview
-
-Built using:
-
-• Blender bmesh API  
-• GPU draw handlers  
-• KDTree snapping system  
-• Non-destructive temporary geometry  
-• Smart origin logic  
-
-Optimized for architectural modeling workflows.
-
----
-
-# 📦 Blender Version
+# Blender Version
 
 Tested on:
 
+```
 Blender 4.5 LTS
+```
+
+Older versions are not officially supported.
 
 ---
 
-# 📜 License
+# Technical Overview
 
-MIT License
+Built using:
+
+- Blender BMesh API
+- GPU draw handlers
+- KDTree snapping system
+- Non-destructive temporary mesh logic
+
+Optimized for performance and real-time viewport interaction.
+
+---
+
+# License
+
+MIT License  
+Free to use, modify, and distribute.
+
+---
+
+# Author
+
+Developed by  
+**Ammar Alrubayie**
+
+---
+
+# Roadmap (Planned Improvements)
+
+- Dynamic axis inference
+-sultanocean.com
+- Enhanced arc snapping
+- Smart face auto-detection
+- Precision modeling improvements
+
+---
+
+# Contributing
+
+Pull requests are welcome.  
+For major changes, please open an issue first.
+
+---
+
+# Support
+
+If you find this useful:
+
+⭐ Star the repository  
+🛠 Share feedback  
+🚀 Suggest improvements  
+
+---
+
+Blender SketchUp Tools (Grid Mode) – Enhanced  
+Simple. Fast. Precise.
